@@ -74,30 +74,99 @@ export const config = {
       title: "EasyCampus Registration Portal",
       category: "SaaS / Next.js",
       technologies: "Next.js, API Integration, Validation",
-      image: "/images/placeholder.webp",
+      image: "/images/projectsimg/EasyCampusWeb.png",
       description:
         "A student onboarding and interview scheduling portal supporting four user roles - Admin, Campus, Corporate, and Student - with role-specific onboarding workflows and a centralized placement drive platform. Reduced manual errors by 25%.",
       link: "https://www.easycampus.in/",
+      links: [
+        { label: "EasyCampus Website", url: "https://www.easycampus.in/" },
+        {
+          label: "Registration Portal",
+          url: "https://app.easycampus.in/registration",
+        },
+      ],
     },
     {
       id: 2,
       title: "Kuexa Salon & Spa Management System",
       category: "Web App / React",
       technologies: "React.js, Redux, REST APIs",
-      image: "/images/placeholder.webp",
+      image: "/images/projectsimg/kuexa1.png",
       description:
         "Responsive interfaces for salon management and appointment workflows, with REST API integration for appointments, invoices, payments, and staff activity, plus dashboards, filters, and CRUD operations.",
       link: "https://kuexa.com/",
+      links: [{ label: "Kuexa Website", url: "https://kuexa.com/" }],
     },
     {
       id: 3,
       title: "Kuexa Admin Dashboard",
       category: "Admin Dashboard",
       technologies: "React.js, Redux, Syncfusion",
-      image: "/images/placeholder.webp",
+      image: "/images/projectsimg/adminkuexa1.png",
       description:
         "Dashboard features for managing appointments, clients, services, products, and billing, with interactive Syncfusion DataGrids and charts, filtering, and Excel/PDF export for reporting.",
       link: "https://admin.kuexa.com/#/dashboard",
+      links: [
+        {
+          label: "Kuexa Admin Dashboard",
+          url: "https://admin.kuexa.com/#/dashboard",
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "SaintShop Kuexa Business Dashboard",
+      category: "Business Dashboard",
+      technologies: "React.js, Dashboard UI, Data Tables",
+      image: "/images/projectsimg/SaintShopKuexa.png",
+      description:
+        "Business dashboard with order and revenue summaries, product and inventory statistics, and management modules for categories, vendors, and offers.",
+      link: "https://saintshopadmin.kuexa.com/#/dashboard",
+      links: [
+        {
+          label: "SaintShop Admin Dashboard",
+          url: "https://saintshopadmin.kuexa.com/#/dashboard",
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: "Shalimar Paints Admin Dashboard",
+      category: "Admin Dashboard",
+      technologies: "React.js, Product Management, Data Tables",
+      image: "/images/projectsimg/shalimarpaints.png",
+      description:
+        "Admin interface for managing product SKUs, market sectors, and product groups, with searchable product data.",
+      links: [],
+    },
+    {
+      id: 6,
+      title: "EasyCampus Admin Dashboard",
+      category: "Education / Admin Dashboard",
+      technologies: "Next.js, React.js, Tailwind CSS",
+      image: "/images/projectsimg/EasyCampusDashboard.png",
+      description:
+        "Education platform dashboard presenting campus activity, placement metrics, analytics, map views, and reports.",
+      links: [],
+    },
+    {
+      id: 7,
+      title: "Mayank Software SFA Portal",
+      category: "Sales Force Automation",
+      technologies: "Web App",
+      image: "/images/placeholder.webp",
+      description: "Sales force automation portal.",
+      link: "https://sfa.mayanksoftwares.co/",
+      links: [
+        {
+          label: "SFA Portal",
+          url: "https://sfa.mayanksoftwares.co/",
+        },
+        {
+          label: "Kuexa Login",
+          url: "https://kuexa.mayanksoftwares.co/login",
+        },
+      ],
     },
   ],
   contact: {

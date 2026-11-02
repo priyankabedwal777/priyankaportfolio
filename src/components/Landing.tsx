@@ -14,9 +14,7 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
             <h1>
-              {firstName.toUpperCase()}
-              {' '}
-              <br />
+              {firstName.toUpperCase()} <br />
               {lastName && <span>{lastName.toUpperCase()}</span>}
             </h1>
           </div>
@@ -26,13 +24,15 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-1">Frontend Engineer</div>
             </h2>
             <h2>
-              <div className="landing-h2-info">React &amp; Next.js Developer</div>
+              <div className="landing-h2-info">
+                React &amp; Next.js Developer
+              </div>
             </h2>
           </div>
           {/* Mobile photo - shows only on mobile when 3D character is hidden */}
           <div className="mobile-photo">
             <img
-              src="/images/mypicnbg.png"
+              src="/images/mypic.png"
               alt="Priyanka Bedwal"
               loading="eager"
               fetchPriority="high"

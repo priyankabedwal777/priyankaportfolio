@@ -17,7 +17,6 @@ const MyWorks = () => {
 
       <div className="myworks-grid">
         {config.projects.map((project, index) => {
-          const isInternalLink = Boolean(project.link?.startsWith("/"));
           const cardContent = (
             <>
               <div className="myworks-card-number">0{index + 1}</div>
@@ -32,31 +31,52 @@ const MyWorks = () => {
               </div>
             </>
           );
-
-          if (isInternalLink) {
-            return (
-              <Link
-                className="myworks-card"
-                key={project.id}
-                data-cursor="disable"
-                to={project.link}
-              >
-                {cardContent}
-              </Link>
-            );
-          }
+          const projectLinks =
+            project.links.length > 0
+              ? project.links
+              : project.link
+                ? [{ label: "View Project", url: project.link }]
+                : [];
 
           return (
-            <a
-              className="myworks-card"
-              key={project.id}
-              data-cursor="disable"
-              href={project.link || undefined}
-              target={project.link ? "_blank" : undefined}
-              rel={project.link ? "noopener noreferrer" : undefined}
-            >
-              {cardContent}
-            </a>
+            <article className="myworks-card" key={project.id}>
+              {project.link?.startsWith("/") ? (
+                <Link
+                  className="myworks-card-main"
+                  data-cursor="disable"
+                  to={project.link}
+                >
+                  {cardContent}
+                </Link>
+              ) : project.link ? (
+                <a
+                  className="myworks-card-main"
+                  data-cursor="disable"
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cardContent}
+                </a>
+              ) : (
+                <div className="myworks-card-main">{cardContent}</div>
+              )}
+              {projectLinks.length > 0 && (
+                <div className="myworks-card-links">
+                  {projectLinks.map((projectLink) => (
+                    <a
+                      key={projectLink.url}
+                      href={projectLink.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-cursor="disable"
+                    >
+                      {projectLink.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </article>
           );
         })}
       </div>
