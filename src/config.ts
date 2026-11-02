@@ -71,7 +71,7 @@ export const config = {
   projects: [
     {
       id: 1,
-      title: "EasyCampus Registration Portal",
+      title: "EasyCampus Website",
       category: "SaaS / Next.js",
       technologies: "Next.js, API Integration, Validation",
       image: "/images/projectsimg/EasyCampusWeb.png",
@@ -80,14 +80,26 @@ export const config = {
       link: "https://www.easycampus.in/",
       links: [
         { label: "EasyCampus Website", url: "https://www.easycampus.in/" },
+      ],
+    },
+    {
+      id: 2,
+      title: "EasyCampus Admin Dashboard",
+      category: "Education / Admin Dashboard",
+      technologies: "Next.js, React.js, Tailwind CSS",
+      image: "/images/projectsimg/EasyCampusDashboard.png",
+      description:
+        "Education platform dashboard presenting campus activity, placement metrics, analytics, map views, and reports.",
+      link: "https://app.easycampus.in/registration",
+      links: [
         {
-          label: "Registration Portal",
+          label: "EasyCampus Admin Dashboard",
           url: "https://app.easycampus.in/registration",
         },
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: "Kuexa Salon & Spa Management System",
       category: "Web App / React",
       technologies: "React.js, Redux, REST APIs",
@@ -98,7 +110,7 @@ export const config = {
       links: [{ label: "Kuexa Website", url: "https://kuexa.com/" }],
     },
     {
-      id: 3,
+      id: 4,
       title: "Kuexa Admin Dashboard",
       category: "Admin Dashboard",
       technologies: "React.js, Redux, Syncfusion",
@@ -114,7 +126,7 @@ export const config = {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "SaintShop Kuexa Business Dashboard",
       category: "Business Dashboard",
       technologies: "React.js, Dashboard UI, Data Tables",
@@ -130,41 +142,18 @@ export const config = {
       ],
     },
     {
-      id: 5,
+      id: 6,
       title: "Shalimar Paints Admin Dashboard",
       category: "Admin Dashboard",
       technologies: "React.js, Product Management, Data Tables",
       image: "/images/projectsimg/shalimarpaints.png",
       description:
         "Admin interface for managing product SKUs, market sectors, and product groups, with searchable product data.",
-      links: [],
-    },
-    {
-      id: 6,
-      title: "EasyCampus Admin Dashboard",
-      category: "Education / Admin Dashboard",
-      technologies: "Next.js, React.js, Tailwind CSS",
-      image: "/images/projectsimg/EasyCampusDashboard.png",
-      description:
-        "Education platform dashboard presenting campus activity, placement metrics, analytics, map views, and reports.",
-      links: [],
-    },
-    {
-      id: 7,
-      title: "Mayank Software SFA Portal",
-      category: "Sales Force Automation",
-      technologies: "Web App",
-      image: "/images/placeholder.webp",
-      description: "Sales force automation portal.",
       link: "https://sfa.mayanksoftwares.co/",
       links: [
         {
-          label: "SFA Portal",
+          label: "Shalimar Paints Admin Dashboard",
           url: "https://sfa.mayanksoftwares.co/",
-        },
-        {
-          label: "Kuexa Login",
-          url: "https://kuexa.mayanksoftwares.co/login",
         },
       ],
     },
